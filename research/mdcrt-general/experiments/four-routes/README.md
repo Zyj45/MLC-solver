@@ -8,4 +8,4 @@
 
 ## 保留与省略
 
-CSV 中保留每个已计时检查点和覆盖状态。原始 84 个压缩输入样本约 32 MB，逐进程日志约 2.6 MB，未加入此归档。source/sources_frozen.zip 保存实验源码冻结快照，便于校对 manifest.json 中列出的源码哈希。
+CSV 中保留每个已计时检查点和覆盖状态。原始 84 个压缩输入样本约 32 MB，逐进程日志约 2.6 GB，未加入此归档。source/sources_frozen.zip 保存实验源码冻结快照，便于校对 manifest.json 中列出的源码哈希。
