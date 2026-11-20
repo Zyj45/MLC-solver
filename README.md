@@ -9,11 +9,11 @@ You can run the notebooks and scripts in this repository in either of the follow
 
 If you have SageMath installed locally, launch the Jupyter Notebook environment from the SageMath shell:
 
-```bash
+~~~bash
 sage -n jupyter
-```
+~~~
 
-Then open the `Compare.ipynb` file in this repository and select the **SageMath** kernel. All code in the comparison notebooks is designed to run with SageMath 10.7 or later.
+Then open the Compare.ipynb file in this repository and select the SageMath kernel. All code in the comparison notebooks is designed to run with SageMath 10.7 or later.
 
 ### Option 2: CoCalc
 
@@ -21,9 +21,13 @@ CoCalc is a web-based computational platform that provides a full Jupyter Notebo
 
 To get started:
 
-1. Visit [https://cocalc.com](https://cocalc.com) and sign up for a free account.
+1. Visit https://cocalc.com and sign up for a free account.
 2. Create a new project.
-3. Upload the `Compare.ipynb` file from this repository to your project, or create a new Jupyter Notebook and select the **SageMath** kernel.
+3. Upload the Compare.ipynb file from this repository to your project, or create a new Jupyter Notebook and select the SageMath kernel.
 4. Run the cells to reproduce the experiments.
 
+## General MD-CRT research
 
+The research archive in research/mdcrt-general/ contains the adjugate reduction guide, exact integer algorithms, verification cases, and four-route benchmark results for general matrix CRT systems. The archive includes the formal protocol, timing data, coverage records, and 16 three-dimensional comparison charts.
+
+Start with research/mdcrt-general/README.md for the file map and experiment scope.

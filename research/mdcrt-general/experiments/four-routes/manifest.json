@@ -1,0 +1,213 @@
+{
+  "seconds": 3600.0,
+  "trial_seconds": 30.0,
+  "smoke": false,
+  "bits": 16,
+  "seed_base": 20261105,
+  "grid": [
+    [
+      "cyclic_shared",
+      8,
+      8
+    ],
+    [
+      "dense_shared",
+      8,
+      8
+    ],
+    [
+      "dense_primitive",
+      8,
+      8
+    ],
+    [
+      "diagonal_coprime",
+      8,
+      8
+    ],
+    [
+      "cyclic_shared",
+      8,
+      16
+    ],
+    [
+      "dense_shared",
+      8,
+      16
+    ],
+    [
+      "dense_primitive",
+      8,
+      16
+    ],
+    [
+      "diagonal_coprime",
+      8,
+      16
+    ],
+    [
+      "cyclic_shared",
+      8,
+      32
+    ],
+    [
+      "dense_shared",
+      8,
+      32
+    ],
+    [
+      "dense_primitive",
+      8,
+      32
+    ],
+    [
+      "diagonal_coprime",
+      8,
+      32
+    ],
+    [
+      "cyclic_shared",
+      16,
+      8
+    ],
+    [
+      "dense_shared",
+      16,
+      8
+    ],
+    [
+      "dense_primitive",
+      16,
+      8
+    ],
+    [
+      "diagonal_coprime",
+      16,
+      8
+    ],
+    [
+      "cyclic_shared",
+      16,
+      16
+    ],
+    [
+      "dense_shared",
+      16,
+      16
+    ],
+    [
+      "dense_primitive",
+      16,
+      16
+    ],
+    [
+      "diagonal_coprime",
+      16,
+      16
+    ],
+    [
+      "cyclic_shared",
+      16,
+      32
+    ],
+    [
+      "dense_shared",
+      16,
+      32
+    ],
+    [
+      "dense_primitive",
+      16,
+      32
+    ],
+    [
+      "diagonal_coprime",
+      16,
+      32
+    ],
+    [
+      "cyclic_shared",
+      32,
+      8
+    ],
+    [
+      "dense_shared",
+      32,
+      8
+    ],
+    [
+      "dense_primitive",
+      32,
+      8
+    ],
+    [
+      "diagonal_coprime",
+      32,
+      8
+    ],
+    [
+      "cyclic_shared",
+      32,
+      16
+    ],
+    [
+      "dense_shared",
+      32,
+      16
+    ],
+    [
+      "dense_primitive",
+      32,
+      16
+    ],
+    [
+      "diagonal_coprime",
+      32,
+      16
+    ],
+    [
+      "cyclic_shared",
+      32,
+      32
+    ],
+    [
+      "dense_shared",
+      32,
+      32
+    ],
+    [
+      "dense_primitive",
+      32,
+      32
+    ],
+    [
+      "diagonal_coprime",
+      32,
+      32
+    ]
+  ],
+  "methods": [
+    "global_tri",
+    "cascade_tri",
+    "adj_aux",
+    "adj_congruence"
+  ],
+  "queries": [
+    1,
+    10,
+    100,
+    1000
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "flint": "0.9.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads": 1,
+  "source_sha256": {
+    "local/benchmark_mdcrt_four_routes.py": "c983824c3e986d0a140d4ddab170cfdff0d023bde24a09a0ebcbe9583e18ac1e",
+    "local/mdcrt_adjugate_global.py": "e65feb275fe0ab13769794acee435959d29e3fe5a553a0edcd3d95f19d49bae4",
+    "local/mdcrt_adjugate_dual.py": "57bada7c1fd2ed1b59cb020db76669472cc51ce2b9d4489330de44e139ad394a",
+    "backend/bidirectional.py": "4810daf8546a2e562a38f340095234d7434f0dcc5b73f799c74bc29813528a4e",
+    "backend/bidirectional_inputs.py": "59a6c001fd43dc7878da163b1df2c78ecc84e79345b5df751b7ce537810c394a"
+  },
+  "executable": "python.exe (managed runtime)"
+}
