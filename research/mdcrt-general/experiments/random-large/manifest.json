@@ -1,0 +1,33 @@
+{
+  "sizes": [
+    16,
+    32,
+    64
+  ],
+  "queries": [
+    1,
+    100
+  ],
+  "methods": [
+    "cascade_hnf",
+    "adj_aux",
+    "adj_congruence"
+  ],
+  "base_seed": 20261125,
+  "entry_limit": 127,
+  "witness_limit": 32767,
+  "repetitions": 1,
+  "timeout_s": 7200,
+  "threads": 1,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+  "python_flint": "0.9.0",
+  "flint": "3.6.0",
+  "sha256_by_source_file": {
+    "benchmark.py": "27cb9762f1c979ec9a0f0d5ddc1227e6bd429c7f55b1ee6a4249d6c32ed41459",
+    "mdcrt_adjugate_global.py": "e65feb275fe0ab13769794acee435959d29e3fe5a553a0edcd3d95f19d49bae4",
+    "mdcrt_adjugate_dual.py": "8f2d54994e046fe833c2fccd6c86e8bc9817352d41b5c16364f53207badbc7e6",
+    "bidirectional.py": "2c295b6e388780cd851ebce5b6bad1c5aa45cf1e987202ad28a95bcba37e225f"
+  }
+}

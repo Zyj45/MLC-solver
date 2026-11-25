@@ -1,0 +1,62 @@
+{
+  "captured_at": "2026-11-25T15:21:46+08:00",
+  "verified_checkpoints": 32,
+  "planned_checkpoints": 54,
+  "fully_paired": {
+    "1": [
+      [
+        16,
+        16,
+        "adj_congruence"
+      ],
+      [
+        16,
+        32,
+        "adj_congruence"
+      ],
+      [
+        16,
+        64,
+        "adj_congruence"
+      ],
+      [
+        32,
+        16,
+        "adj_aux"
+      ],
+      [
+        32,
+        32,
+        "adj_congruence"
+      ]
+    ],
+    "100": [
+      [
+        16,
+        16,
+        "adj_aux"
+      ],
+      [
+        16,
+        32,
+        "adj_aux"
+      ],
+      [
+        16,
+        64,
+        "cascade_hnf"
+      ],
+      [
+        32,
+        16,
+        "adj_aux"
+      ],
+      [
+        32,
+        32,
+        "adj_aux"
+      ]
+    ]
+  },
+  "input_cells_generated": 6
+}

@@ -9,6 +9,7 @@
 - algorithms/mdcrt_adjugate_dual.py 实现伴随同余和对偶格路线。algorithms/tests/ 保存对应验证用例。
 - experiments/four-routes/ 保存四种路线的冻结协议、完整报告、汇总、原始计时表、配对表、覆盖表及 16 张 3D 图。网页报告位于 charts_3d/index.html。
 - experiments/adjugate-dual/ 保存对偶格路线的补充实验结果、计时数据和运行脚本。
+- [experiments/random-large/REPORT.md](experiments/random-large/REPORT.md) 比较随机可解输入的矩阵级联和两种伴随 HNF，覆盖 n、k 各取 16、32、64，查询次数为 1 和 100。输入生成和核验规则见[实验协议](experiments/random-large/PROTOCOL.md)。
 - requirements.txt 记录绘图和精确整数运算依赖版本。
 
 四路线实验比较原生堆叠 HNF、原生矩阵级联、伴随＋辅助变量和伴随＋同余行格。输入按循环共享因子、稠密共享因子、稠密无公共标量因子、对角互素分组。全部结果和未完成覆盖均保留在报告与 CSV 中。

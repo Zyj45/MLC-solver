@@ -1,6 +1,6 @@
 # MD-CRT Research Handoff
 
-Updated 2026-11-20. This file preserves the context needed to continue the general MD-CRT work.
+Updated 2026-11-25. This file preserves the context needed to continue the general MD-CRT work.
 
 ## Project and repository
 
@@ -44,6 +44,18 @@ Two global constructions are documented and implemented in algorithms/mdcrt_adju
 The separate dual-lattice implementation is algorithms/mdcrt_adjugate_dual.py. The exact arithmetic adapter used in the archived experiment is in algorithms/mlc_mdcrt_exact/. The packaged copies have portable imports. The frozen source snapshot used for the formal experiment is retained at experiments/four-routes/source/sources_frozen.zip. The source hashes in manifest.json refer to that frozen snapshot. The local executable path was sanitized in the public manifest.
 
 ## Experiments and data
+
+### Large random compatible inputs
+
+The independent experiment in [experiments/random-large/](experiments/random-large/) uses all nine combinations of n and k in {16, 32, 64}, with Q=1 and Q=100. Matrix entries are sampled uniformly from [-127, 127], with rejection of singular matrices only. Each query has a random integer witness. The benchmark converts it to canonical block residues and gives the solvers the original moduli and residues. For each n, the three choices of k share prefixes of one matrix and residue sequence.
+
+The three methods are matrix cascade, adjugate reduction plus auxiliary-variable HNF, and adjugate reduction plus congruence row-lattice HNF. The new cascade normalizes the period basis after each merge and reduces the intermediate particular solution in the new basis. These operations are timed. Both adjugate methods use the existing solver implementations. The run includes one measurement per method and case, with a two-hour limit per worker. The first query is also the first query in the 100-query timing.
+
+The benchmark checks each solver's complete period lattice against an independent reference from the sum of the original block dual lattices. It verifies every witness against the original moduli and certifies each returned solution by checking its difference from the witness in the period lattice. Start with [REPORT.md](experiments/random-large/REPORT.md), [PROTOCOL.md](experiments/random-large/PROTOCOL.md), and the accompanying CSV and manifest.json.
+
+The 2026-11-25 15:21 China time snapshot contains 32 of the 54 planned verified timing checkpoints and five complete three-method comparisons at each Q. At Q=1, congruence row-lattice HNF won four of the five complete comparisons and auxiliary-variable HNF won one. At Q=100, auxiliary-variable HNF won four and matrix cascade won the n=16, k=64 comparison. At n=32, k=64, the row-lattice method recorded 5.824 s for Q=1 and 456.251 s for Q=100. Its two competitors at that size and all n=64 timings remain outside this snapshot. Use [coverage.csv](experiments/random-large/coverage.csv) to find the remaining cells and [snapshot.json](experiments/random-large/snapshot.json) for the exact cut time. These rankings describe one sampled input at each size.
+
+### Historical four-route and dual-lattice experiments
 
 The formal four-route experiment compares:
 - global_tri: native stacked HNF
